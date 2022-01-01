@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <label for="hewan">Hewan</label>
+    <select id="hewan">
+        <option value="cumi">Cumi-cumi</option>
+        <option value="kepiting">Kepiting</option>
+        <option value="udang">Udang</option>
+        <option value="kerang">Kerang</option>
+        <option value="ubur">Ubur-ubur</option>
+        <option value="kuda laut">Kuda laut</option>
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    <img id="gambar" src="">
+    <script>
+        function cetakGambar() {
+            const hewan = document.getElementById('hewan');
+            const gambar = document.getElementById('gambar');
+
+            if (hewan.value === 'cumi') {
+                gambar.src ='https://cdn.popmama.com/content-images/post/20210830/c79b27b0d46bf29a809f8d1403d0e69cjpg-58d8b9fdc86f1c77a2172eb1e9a6824b_800x420.jpg';
+            }
+
+            if (hewan.value === 'kepiting') {
+               gambar.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Liocarcinus_vernalis.jpg/250px-Liocarcinus_vernalis.jpg';
+            }
+
+            if (hewan.value === 'udang') {
+               gambar.src = 'https://upload.wikimedia.org/wikipedia/commons/5/52/Woda-6_ubt.jpeg';
+            }
+
+            if (hewan.value === 'kerang') {
+               gambar.src = 'https://asset-a.grid.id//crop/0x0:0x0/700x465/photo/bobofoto/original/17131_7-fakta-seputar-kerang.jpg';
+            }
+
+            if (hewan.value === 'ubur') {
+               gambar.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Chrysaora_Colorata.jpg/1200px-Chrysaora_Colorata.jpg';
+            }
+
+            if (hewan.value === 'kuda laut') {
+               gambar.src = 'http://asset-a.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/3140_foto-liveanimalslistcom.jpg';
+            }
+
+        }
+            
+    </script>
+</body>
+
+</html>

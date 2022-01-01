@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+<div class="tab-pane fade" id="valid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-sm-8">
+                <div class="card">
+                    <div class="card-block">
+                        <h1 class="h2 card-header text-center">Form Validator</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-md-center">
+                            <form class="col-md-12" id="val">
+                                <div class="row mb-3">
+                                    <label for="name" class="col-sm-3 col-form-label">Nama</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="name" placeholder="Masukkan nama anda" onkeyup="validname()" required>
+                                      <span class="invalid-tooltip" id="error_name"></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                    <div class="col-sm-9">
+                                      <input type="email" class="form-control" id="email" placeholder="youremail@example.com" onkeyup="validmail()" required>
+                                      <span class="invalid-tooltip" id="error_email"></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                    <label for="time" class="col-sm-3 col-form-label">Jam berangkat</label>
+                                    <div class="col-sm-9">
+                                      <input type="time" class="form-control" id="time" onkeyup="validtime()" required>
+                                      <span class="invalid-tooltip" id="error_time"></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                    <label for="dest" class="col-sm-3 col-form-label">Tujuan</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="dest" placeholder="Tujuan anda" onkeyup="validdest()" required>
+                                      <span class="invalid-tooltip" id="error_dest"></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                    <label for="sum-tkt" class="col-sm-3 col-form-label">Tiket</label>
+                                    <div class="col-sm-9">
+                                      <input type="number" class="form-control" id="sum-tkt" placeholder="Jumlah tiket 1-10" onkeyup="validsum()" required>
+                                      <span class="invalid-tooltip" id="error_sum"></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                      <div class="col-sm-9"></div>
+                                      <div class="col-sm-3">
+                                        <button type="button" class="btn btn-primary float-end mt-3" onclick="printing()">Buat Tiket</button>
+                                      </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                      <div id="hehehe" class="col-sm-4"></div>
+                                      <div id="hahaha" class="col-sm-8"></div>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
